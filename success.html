@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Successful</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: sans-serif; }
+        body { background-color: #0b0f19; color: #f1f5f9; display: flex; justify-content: center; align-items: center; min-height: 100vh; padding: 20px; }
+        .card { background: #111827; border: 1px solid #1f2937; border-radius: 16px; max-width: 440px; width: 100%; padding: 32px; text-align: center; }
+        .check { font-size: 40px; color: #10b981; margin-bottom: 12px; }
+        h1 { font-size: 22px; margin-bottom: 8px; }
+        p { color: #94a3b8; font-size: 14px; margin-bottom: 24px; word-break: break-all; }
+        .btn-link { display: block; background: #10b981; color: #ffffff; text-decoration: none; padding: 14px; border-radius: 8px; font-weight: 700; }
+        .btn-link:hover { background: #059669; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="check">✓</div>
+        <h1>Payment Successful!</h1>
+        <p>Transaction ID: {{ payment_id }}</p>
+        <a href="{{ download_url }}" target="_blank" class="btn-link">Open Master FX Google Drive</a>
+    </div>
+</body>
+</html>
